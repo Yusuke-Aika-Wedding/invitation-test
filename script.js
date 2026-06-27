@@ -1,4 +1,4 @@
-const GAS_URL = 'ここにGASのウェブアプリURLを貼る';
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbzQhe9R4fUkjGnyQh8gDkKKaMhJK4Dh70KGMz38nb9TvZNCC8qWm8e15m32b260ksKm/exec';
 const GUEST_ID = 'taro_hanako';
 const WEDDING_TIME = new Date('2027-03-21T10:00:00+09:00').getTime();
 
