@@ -14,7 +14,7 @@ window.WEDDING_CONFIG = {
     'konninn-hanako': {
       displayName: '婚姻花子',
       path: 'konninn-hanako/'
-    }
+    },
     'shirato-aika': {
       displayName: '白戸愛佳',
       path: 'shirato-aika/'
