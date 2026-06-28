@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yusuke & Aika Wedding Invitation">
+  <title>婚姻花子様 | Yusuke & Aika Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Noto+Serif+JP:wght@400;500;600;700&family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-guest-id="konninn-hanako" data-default-name="婚姻花子">
+  <div id="messageOverlay" class="message-overlay" role="button" tabindex="0" aria-label="招待状を開く">
+    <div class="message-shade"></div>
+    <section class="message-card" aria-live="polite">
+      <p class="script-label">Wedding Invitation</p>
+      <h1 id="messageGuestName" class="message-name">婚姻花子様</h1>
+      <p id="messageBody" class="message-text">
+        この度、祐輔と愛佳は結婚することになりました。<br>
+        結婚式に関して、<br>
+        出欠席の入力・送信をよろしくお願いします。<br>
+        今後もよろしくお願いします。
+      </p>
+      <p class="message-signature">Yusuke &amp; Aika</p>
+      <p class="tap-guide">Tap to open</p>
+    </section>
+  </div>
+
+  <main id="invitation" class="site-shell">
+    <header class="hero fade-up">
+      <div class="hero-photo-wrap">
+        <img src="../assets/hero-outdoor.jpg" alt="東京タワーの前で撮影した新郎新婦の写真" class="hero-photo">
+      </div>
+      <div class="hero-copy">
+        <p class="script-label">Yusuke &amp; Aika</p>
+        <h1>Wedding Invitation</h1>
+        <p class="lead">
+          大切な皆様に見守られながら、<br class="sp-only">人生の新しい一歩を踏み出します。<br>
+          ぜひご出欠をお知らせください。
+        </p>
+      </div>
+    </header>
+
+    <section class="section countdown-section fade-up" aria-labelledby="countdownTitle">
+      <p class="section-kicker">Countdown</p>
+      <h2 id="countdownTitle">Until Our Wedding</h2>
+      <div class="countdown-grid" aria-live="polite">
+        <div><span id="days" class="count-number">000</span><span class="count-label">Days</span></div>
+        <div><span id="hours" class="count-number">00</span><span class="count-label">Hours</span></div>
+        <div><span id="minutes" class="count-number">00</span><span class="count-label">Minutes</span></div>
+        <div><span id="seconds" class="count-number">00</span><span class="count-label">Seconds</span></div>
+      </div>
+    </section>
+
+    <section class="section schedule-section fade-up" aria-labelledby="scheduleTitle">
+      <p class="section-kicker">Schedule</p>
+      <h2 id="scheduleTitle">Wedding Day</h2>
+      <div class="schedule-card">
+        <div class="date-block">
+          <span class="date-year">2027</span>
+          <span class="date-main">3.21</span>
+          <span class="date-day">Sunday</span>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item"><span class="time">10:00 – 10:30</span><span>挙式</span></div>
+          <div class="timeline-item"><span class="time">11:00 – 14:00</span><span>披露宴</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section venue-section fade-up" aria-labelledby="venueTitle">
+      <p class="section-kicker">Venue</p>
+      <h2 id="venueTitle">Kimpton Shinjuku Tokyo</h2>
+      <p class="venue-name">キンプトン新宿東京</p>
+      <p class="venue-address">〒160-0023<br>東京都新宿区西新宿3丁目4-7</p>
+      <div class="map-frame" title="キンプトン新宿東京 Google Map">
+        <iframe src="https://www.google.com/maps?q=%E3%82%AD%E3%83%B3%E3%83%97%E3%83%88%E3%83%B3%E6%96%B0%E5%AE%BF%E6%9D%B1%E4%BA%AC&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section class="section movie-section fade-up" aria-labelledby="movieTitle">
+      <p class="section-kicker">Access Movie</p>
+      <h2 id="movieTitle">How to Get There</h2>
+      <p class="section-note">会場までの行き方動画をここに掲載できます。今回は仮動画を入れています。</p>
+      <video class="access-movie" controls preload="metadata" poster="../assets/access-poster.jpg">
+        <source src="../assets/access-placeholder.mp4" type="video/mp4">
+        お使いのブラウザでは動画を再生できません。
+      </video>
+    </section>
+
+    <section class="section reply-section fade-up" aria-labelledby="replyTitle">
+      <p class="section-kicker">Reply</p>
+      <h2 id="replyTitle">Attendance Form</h2>
+      <p class="section-note">挙式・披露宴それぞれのご出欠と、アレルギーの有無をお知らせください。</p>
+
+      <form id="rsvpForm" class="rsvp-form">
+        <input type="hidden" id="guestId" name="guestId" value="konninn-hanako">
+        <div class="form-grid">
+          <label class="field">
+            <span>氏名</span>
+            <input id="name" name="name" type="text" value="婚姻花子" autocomplete="name" required>
+          </label>
+          <label class="field">
+            <span>メールアドレス</span>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="example@example.com" required>
+          </label>
+        </div>
+
+        <div class="choice-block">
+          <p class="choice-title">挙式へのご出欠</p>
+          <div class="segmented-choice">
+            <label><input type="radio" name="ceremonyAttendance" value="ご出席" required><span>ご出席</span></label>
+            <label><input type="radio" name="ceremonyAttendance" value="ご欠席" required><span>ご欠席</span></label>
+          </div>
+        </div>
+
+        <div class="choice-block">
+          <p class="choice-title">披露宴へのご出欠</p>
+          <div class="segmented-choice">
+            <label><input type="radio" name="receptionAttendance" value="ご出席" required><span>ご出席</span></label>
+            <label><input type="radio" name="receptionAttendance" value="ご欠席" required><span>ご欠席</span></label>
+          </div>
+        </div>
+
+        <label class="field field-wide">
+          <span>アレルギー</span>
+          <textarea id="allergy" name="allergy" placeholder="例：えび・かに・卵／なし"></textarea>
+        </label>
+
+        <button id="submitButton" class="submit-button" type="submit">Send Reply</button>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
+
+      <div id="thanksMessage" class="thanks-message" hidden>
+        <p class="script-label">Thank You</p>
+        <p>ご回答ありがとうございました！<br>ご来場お待ちしております！</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/config.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
